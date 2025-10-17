@@ -42,6 +42,9 @@ lto = true
 codegen-units = 1
 panic = "abort"
 
+[target.wasm32-unknown-unknown.dependencies]
+gloo-timers = { version = "0.3.0", features = ["futures"] }
+
 [package.metadata.leptos]
 # The name used by wasm-bindgen/cargo-leptos for the JS/WASM bundle. Defaults to the crate name
 output-name = "bevytos"
